@@ -541,11 +541,13 @@ header {
 // Блок6 с фото
 .block6__img-con {
   width: 420px;
-  height: 544px;
+  height: 524px;
+ 
 }
 .block6__img-con img {
   width: 100%;
   height: 100%;
+  border-radius: 15px;
   // transform: translateX(-90px);
 }
 // отсек для цены и кнопки

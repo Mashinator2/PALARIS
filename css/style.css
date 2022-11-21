@@ -720,12 +720,13 @@ header {
 
 .block6__img-con {
   width: 420px;
-  height: 544px;
+  height: 524px;
 }
 
 .block6__img-con img {
   width: 100%;
   height: 100%;
+  border-radius: 15px;
 }
 
 .price {
