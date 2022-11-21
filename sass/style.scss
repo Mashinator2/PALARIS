@@ -10,7 +10,7 @@ body {
   // background-color: #1F1F1F;
 }
 .big-con {
-  background-image: url("../img/bg-image.png");
+  background-image: url("../img/bg-image.jpg");
   // background-attachment: fixed;
   @include bg-setting;
   height: auto;
@@ -199,7 +199,7 @@ header {
 .block2__img-con {
   width: 500px;
   height: 637px;
-  background-image: url("../img/im-mw.png");
+  background-image: url("../img/im-mw.jpg");
   @include bg-setting;
   @include center;
   border-radius: 10px;
@@ -274,7 +274,7 @@ header {
 .text-con__img {
   width: 427px;
   height: 144px;
-  background-image: url("../img/city.png");
+  background-image: url("../img/city.jpg");
   @include center;
   @include bg-setting;
   transform: translate(-5px, 55px);
@@ -353,7 +353,8 @@ header {
   cursor: pointer;
   width: 630px;
   height: 460px;
-  background-image: url("../img/service1.png");
+  background-image: url("../img/service1.jpg");
+  border-radius: 14px;
   @include bg-setting;
   display: flex;
   justify-content: space-around;
@@ -396,7 +397,8 @@ header {
 
 // блок с инфой 2
 .img2-bg {
-  background-image: url("../img/service2.png");
+  background-image: url("../img/service2.jpg");
+  border-radius: 14px;  
   @include bg-setting;
 }
 .info-img2 {
@@ -438,7 +440,8 @@ header {
 
 // блок с инфой 3
 .img3-bg {
-  background-image: url("../img/service3.png");
+  background-image: url("../img/service3.jpg");
+  border-radius: 14px;
   @include bg-setting;
 }
 
@@ -538,7 +541,7 @@ header {
 // Блок6 с фото
 .block6__img-con {
   width: 420px;
-  height: 584px;
+  height: 544px;
 }
 .block6__img-con img {
   width: 100%;
@@ -1071,7 +1074,7 @@ color: #000000;
 .main-block11{
   width: 100%;
   height:auto;
-  background: url("../img/bg-im2.png");
+  background: url("../img/bg-im2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 display: flex;
