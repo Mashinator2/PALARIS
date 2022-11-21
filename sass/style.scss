@@ -1,0 +1,1251 @@
+@import "../sass/color";
+@import "../sass/mixin";
+@import "../sass/font.scss";
+@import "../sass/burger-menu";
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f8ff;
+  // background-color: #1F1F1F;
+}
+.big-con {
+  background-image: url("../img/bg-image.png");
+  // background-attachment: fixed;
+  @include bg-setting;
+  height: auto;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+span {
+  color: $primary;
+}
+.color-gray {
+  color: #c9c9c9;
+}
+html {
+  scroll-behavior: smooth ;
+}
+// block1
+// header
+header {
+  padding: 0 20px;
+}
+.linear {
+  height: 0.1px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.header__con {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+// header-block1
+
+.header__logo {
+  width: 128px;
+  height: 20px;
+}
+
+// header-block2
+.header__nav {
+  //   width: 50%;
+  display: flex;
+  gap: 60px;
+}
+.header__nav a {
+  width: 114px;
+  height: 20px;
+
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #ffffff;
+
+  &:active {
+    color: $primary;
+  }
+}
+
+// header-block3
+.header__nav button {
+  border: none;
+  border-left: 0.5px solid #fff;
+  opacity: 0.5;
+}
+.free-reg__arrow {
+  width: 38px;
+  height: 38px;
+  @include circle-white;
+}
+.header__free-reg {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border-left: 0.2px solid #aab2b3;
+  height: 100%;
+}
+.header__free-reg a:nth-child(2) {
+  width: 190px;
+  height: 20px;
+  left: 1127px;
+  top: 41px;
+
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #ffffff;
+  &:active {
+    color: $primary;
+  }
+}
+.free-reg__arrow svg {
+  width: 20px;
+}
+.free-reg__arrow {
+  @include center;
+  transform: translateX(-20px);
+  &:active {
+    color: $primary;
+  }
+}
+
+// main
+
+.main-block1 {
+  margin-top: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0 0 100px 150px;
+  // padding-bottom: 100px;
+}
+.main-block1 h1 {
+  width: 829px;
+  height: 264px;
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 120%;
+  color: #ffffff;
+}
+.main-block1 button {
+  width: 310px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border: none;
+  background: #3b47b3;
+  border-radius: 81px;
+}
+.main-block1__btn svg {
+  width: 20px;
+}
+.main-block1__btn {
+  width: 195px;
+  height: 22px;
+  left: 197px;
+  top: 644px;
+
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+  &:active {
+    background-color: $w;
+    color: $primary;
+  }
+}
+.block1__reg{
+  color: #ffffff;
+}
+
+// main-block2
+.main-block2 {
+  height: 950px;
+  // background-color: #3b47b3;
+  // @include center;
+  // gap: 150px;
+  // flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  // padding:0 50px;
+}
+
+.block2__img-con {
+  width: 500px;
+  height: 637px;
+  background-image: url("../img/im-mw.png");
+  @include bg-setting;
+  @include center;
+  border-radius: 10px;
+  // gap: 190px;
+}
+.block2__img-con button {
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+
+  color: $w;
+  @include small-button;
+}
+.block2__img-con button:nth-child(1) {
+  transform: translate(-150px, 140px);
+}
+.block2__img-con button:nth-child(2) {
+  transform: translate(150px, 35px);
+}
+
+.block2__text-con h5 {
+  width: 352px;
+  height: 21px;
+
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 21px;
+  color: $secondary;
+}
+.block2__text-con p {
+  width: 560px;
+  height: auto;
+
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: $secondary;
+}
+.text-con__img-con {
+  width: 500px;
+  height: 265px;
+  background-image: url("../icon/Vector\ 29.png");
+  @include bg-setting;
+  display: flex;
+  margin: 0;
+  transform: translateY(70px);
+}
+.small-circle1 {
+  width: 22px;
+  height: 22px;
+  @include basic;
+  @include center;
+}
+.small-circle2 {
+  width: 10px;
+  height: 10px;
+  @include circle;
+}
+.position1 {
+  transform: translate(-12px, 22px);
+}
+.position2 {
+  transform: translate(30px, 162px);
+}
+.text-con__img {
+  width: 427px;
+  height: 144px;
+  background-image: url("../img/city.png");
+  @include center;
+  @include bg-setting;
+  transform: translate(-5px, 55px);
+  border-radius: 10px;
+}
+.text-con__img p {
+  width: 305px;
+  height: 72px;
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  /* or 24px */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+// main-block3
+.main-block3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.block3__card h1 {
+  width: 225px;
+  height: 56px;
+
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+
+  color: $secondary;
+}
+.block3__card p {
+  width: 305px;
+  height: 88px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #545454;
+}
+
+// media-block4
+.main-block4 {
+  margin-bottom: 50px;
+}
+.main-block4 h1 {
+  width: 409px;
+  height: 66px;
+
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 120%;
+
+  color: $secondary;
+  padding-left: 85px;
+}
+// Блоки с фото и инфой
+.block4__images-con {
+  padding-left: 85px;
+  display: flex;
+  gap: 30px;
+}
+.info-img1 {
+  cursor: pointer;
+  width: 630px;
+  height: 460px;
+  background-image: url("../img/service1.png");
+  @include bg-setting;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &:active .info-img1__text1 {
+    color: $primary;
+  }
+  &:active {
+    color: $primary;
+  }
+}
+.info-img1__text1 {
+  width: 300px;
+  height: 114px;
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 125%;
+
+  color: #ffffff;
+  transform: translate(-10px, 150px);
+  // user-select: none;
+}
+.arrow-btn {
+  width: 58px;
+  height: 58px;
+  @include circle-white;
+  @include center;
+  transform: translate(10px, -150px);
+}
+.arrow-btn svg {
+  width: 25px;
+}
+.info-img2-con {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+// блок с инфой 2
+.img2-bg {
+  background-image: url("../img/service2.png");
+  @include bg-setting;
+}
+.info-img2 {
+  width: 500px;
+  height: 220px;
+  cursor: pointer;
+  &:active .info-img2__text2 {
+    color: $primary;
+  }
+  &:active {
+    color: $primary;
+  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.info-img2__text2 {
+  width: 292px;
+  height: 62px;
+
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 125%;
+  color: #ffffff;
+  transform: translate(-10px, 60px);
+}
+.arrow-btn2 {
+  width: 38px;
+  height: 38px;
+  @include circle-white;
+  @include center;
+  transform: translate(10px, -60px);
+}
+.arrow-btn2 svg {
+  width: 20px;
+}
+
+// блок с инфой 3
+.img3-bg {
+  background-image: url("../img/service3.png");
+  @include bg-setting;
+}
+
+// main-block5
+.main-block5 {
+  text-align: left;
+  position: relative;
+  margin: 100px 0;
+  // justify-content: s;
+  // align-items: center;
+}
+.main-block5 li {
+  width: 841px;
+  height: auto;
+  padding-left: 70px;
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 120%;
+  margin-left: 250px;
+  color: #000000;
+}
+.block5__bg-image img {
+  width: 100%;
+}
+.gray-text {
+  background: linear-gradient(140deg, #1f1f1f 50%, #9c9c9c 50%);
+  // -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  
+}
+// main-block6
+.general__block6 {
+  margin-top: 100px;
+}
+.general__block6 {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 50px;
+}
+.main-block6 h1 {
+  width: 586px;
+  height: auto;
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 120%;
+  color: $primary;
+}
+
+.block6__text {
+  width: 488px;
+  height: 66px;
+
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $primary;
+}
+
+// синие карточки
+.text-con__card {
+  @include card;
+  @include center;
+}
+.check-block {
+  @include done;
+  transform: translateX(-25px);
+}
+.text-con__card p {
+  color: #fff;
+  width: 195px;
+  height: auto;
+
+  /* 123 */
+
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+.general-block__card {
+  width: 820px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  margin-top: 30px;
+  // transform: translateX(10px);
+}
+
+// Блок6 с фото
+.block6__img-con {
+  width: 420px;
+  height: 584px;
+}
+.block6__img-con img {
+  width: 100%;
+  height: 100%;
+  // transform: translateX(-90px);
+}
+// отсек для цены и кнопки
+.price {
+  width: 163px;
+  height: 28px;
+
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 125%;
+  color: $secondary;
+  // ;
+}
+.price-con button {
+  &:active {
+    color: #1f1f1f;
+    background-color: #fff;
+  }
+  @include black-btn;
+}
+.block6__register{
+color: #fff;
+}
+.price-con {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  gap: 30px;
+  padding-left: 80px;
+}
+
+// main-block7
+.main-block7 {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  transform: translateX(-5px);
+  gap: 100px;
+  padding: 0 20px;
+  height: auto;
+}
+.block7-title {
+  width: 432px;
+  height: 240px;
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  margin: 0;
+  color: #000000;
+}
+// блок с кругами и текстом
+.block7__info-con {
+  display: grid;
+  gap: 80px;
+  // transform: translateX(100px);
+}
+// блок кругов
+.block__circle {
+  width: 34px;
+  height: 34px;
+  @include basic;
+  @include center;
+  margin-bottom: 25px;
+}
+.circle__circle {
+  width: 14px;
+  height: 14px;
+  @include circle;
+}
+// блок с текстом и названием
+.block__title {
+  width: 232px;
+  height: 48px;
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+
+  color: #000000;
+  margin-bottom: 15px;
+}
+.block__text {
+  height: auto;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #545454;
+}
+// расположение гридов
+.grid1 {
+  width: 206px;
+  grid-area: 1/1/2/2;
+}
+.grid2 {
+  width: 217px;
+  grid-area: 1/2/2/3;
+}
+.grid3 {
+  width: 251px;
+  grid-area: 2/1/3/2;
+}
+.grid4 {
+  width: 287px;
+  height: 110px;
+  grid-area: 2/2/3/3;
+}
+
+.circle2 {
+  transform: translate(-55px, 65px);
+  display: none;
+}
+// main-block8
+.wrap__block8 {
+  margin-top: 120px;
+  height: auto;
+  background: linear-gradient(90deg, #fff 70%, #3b47b3 30%);
+}
+.main-block8 {
+  display: flex;
+  // gap: 100px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 50px;
+}
+.block8__text-con {
+  display: flex;
+  flex-direction: column;
+  gap: 158px;
+  height: 90%;
+  justify-content: flex-end;
+}
+.block8__title {
+  width: 330px;
+  height: 144px;
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+
+  color: #000000;
+}
+.black-circle {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  background-color: $secondary;
+  @include center;
+}
+.black-circle svg {
+  width: 20px;
+  color: #fff;
+}
+// слайд и опции
+.slide__desk {
+  width: 340px;
+  height: 418px;
+  background: #c9cef7;
+  border-radius: 12px;
+  // margin: 40px;
+}
+.desk-con {
+  width: 258px;
+  height: 80%;
+  padding: 40px;
+}
+.slide__desk-image {
+  width: 340px;
+  height: 418px;
+  background: #c9cef7;
+  border-radius: 12px;
+
+  background-color: $primary;
+}
+.desk-image__fon {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/Mask\ Group.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+// содержимое деска
+.desk__icon {
+  width: 52px;
+  height: 52px;
+  @include center;
+  border: 1px solid $primary;
+  border-radius: 50%;
+  margin-bottom: 75px;
+}
+.desk__title {
+  width: 262px;
+  height: 24px;
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 25px;
+  color: #3b47b3;
+}
+.desk__text {
+  width: 263px;
+  height: 160px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #3b47b3;
+}
+// последний элемент содержимое 8 блок
+.fon__ball {
+  padding-top: 40px;
+  padding-left: 145px;
+}
+.fon__title {
+  width: 148px;
+  height: 24px;
+  margin-bottom: 25px;
+  margin-top: 100px;
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  padding-left: 40px;
+  color: #ffffff;
+}
+.fon__text {
+  width: 227px;
+  height: 44px;
+
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 40px;
+  color: #ffffff;
+}
+
+.slide-con {
+  display: flex;
+  margin-top: 150px;
+margin-bottom: 82px;
+}
+.slide__desk2 {
+  display: none;
+}
+// настройки слайдера
+
+#slides {
+  // position: relative;
+  width: 700px;
+}
+#slides article {
+  /*все изображения справа друг от доруга*/
+  width: 350px;
+  float: left;
+}
+
+#slides .image {
+  /*устанавливает общий размер блока с изображениями*/
+  width: 600%;
+  line-height: 0;
+}
+
+#overflow {
+  /*сркывает все, что находится за пределами этого блока*/
+  width: 100%;
+  overflow: hidden;
+}
+
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#switch1:checked ~ #controls label:nth-child(6),
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4),
+#switch6:checked ~ #controls label:nth-child(5) {
+  background: url("../icon/l268x68.png") no-repeat; /*заливка фона картинкой без повторений*/
+  float: left;
+  transform: translate(-84px, -250px);
+  display: block;
+  height: 68px;
+  width: 68px;
+}
+
+/*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2),
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(6),
+#switch6:checked ~ #controls label:nth-child(1) {
+  background: url("../icon/r268x68.png") no-repeat; /*заливка фона картинкой без повторений*/
+  float: right;
+  transform: translate(84px, -250px);
+  display: flex;
+  align-items: flex-start;
+  height: 68px;
+  width: 68px;
+}
+
+label,
+a {
+  /*при наведении на стрелки или переключатели - курсор изменится*/
+  cursor: pointer;
+}
+
+.all input {
+  /*скрывает стандартные инпуты (чекбоксы) на странице*/
+  display: none;
+}
+
+/*позиция изображения при активации переключателя*/
+#switch1:checked ~ #slides .image {
+  margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image {
+  margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image {
+  margin-left: -200%;
+}
+
+#controls {
+  /*положение блока всех управляющих элементов*/
+  // display: none;
+  width: 100%;
+  height: 50px;
+}
+
+#active label {
+  /*стиль отдельного переключателя*/
+  border-radius: 10px; /*скругление углов*/
+  display: none; /*расположение в строку*/
+  width: 15px;
+  height: 15px;
+  background: #bbb;
+}
+
+#active label:hover {
+  /*поведение чекбокса при наведении*/
+  background: #76c8ff;
+  border-color: #777 !important; /*выполнение в любом случае*/
+}
+
+/*цвет активного лейбла при активации чекбокса*/
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4),
+#switch5:checked ~ #active label:nth-child(5),
+#switch6:checked ~ #active label:nth-child(6) {
+  background: #18a3dd;
+  border-color: #18a3dd !important;
+}
+
+#slides .image {
+  /*анимация пролистывания изображений*/
+  transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+#controls label:hover {
+  /*прозрачность стрелок при наведении*/
+  opacity: 0.6;
+}
+
+#controls label {
+  /*прозрачность стрелок при отводе курсора*/
+  transition: opacity 0.2s ease-out;
+}
+
+// main-block9
+.main-block9 {
+  height: auto;
+  display: flex;
+}
+.bg-img {
+  width: 30%;
+  height: 718px;
+}
+.bg-img img {
+  width: 100%;
+  height: 100%;
+}
+.input-text__con {
+  width: 70%;
+  background-color: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.block9__text-con {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.b9text-con__title {
+  width: 436px;
+  height: 76px;
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 125%;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+.b9text-con__text {
+  width: 386px;
+  height: 66px;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+// инпут контейнер
+
+::placeholder {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+}
+.input-con__item {
+  // text-align: start;
+  padding-left: 30px;
+  @include input;
+  border: 1px solid $primary;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #ffffff;
+
+  &:focus {
+    border-color: #bdbdbd;
+    outline: none;
+    // border: 1px solid $secondary;
+    box-shadow: 0 0 0 2px rgba(31, 31, 31, 1);
+    background-color: #fff;
+    color: $secondary;
+  }
+}
+.input-con__button {
+  width: 290px;
+  height: 70px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: none;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #1f1f1f;
+  &:active {
+    background-color: #1f1f1f;
+    color: #fff;
+  }
+}
+.input-con {
+  width: 620px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+// main-block10
+.main-block10{
+padding: 0 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+  height: 540px;
+}
+.block10__title {
+  width: 701px;
+  height: 198px;
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 120%;
+
+  color: #000000;
+}
+.block10__text-con p{
+  width: 394px;
+height: 88px;
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: #000000;
+
+}
+// main-block11
+.main-block11{
+  width: 100%;
+  height:auto;
+  background: url("../img/bg-im2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+.container__items{
+  padding:60px;
+}
+.block11__position{
+  height: 1000px;
+  border-left: 1px solid #c9c9c9;
+// margin-top: 100px
+}
+.items__icon{
+  @include plus;
+  transform: translate(-83px,75px);
+}
+.items__title{
+  width: 232px;
+height: 48px;
+font-family: 'Acherus Feral';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 120%;
+color: #FFFFFF;
+margin-bottom: 20px;
+}
+.items__text{
+  width: 251px;
+height: auto;
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: #FFFFFF;
+}
+// mini-block
+.mini__block11{
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+ 
+}
+.block11__icon{
+  width: 140px;
+
+}
+// main-block12
+.main-block12{
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.first-con__title{
+  width: 560px;
+height: 144px;
+font-family: 'Acherus Feral';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 120%;
+color: #000000;
+margin-bottom: 50px;
+
+}
+.first-con__button{
+  cursor: pointer;
+  width: 252px;
+height: 70px;
+background: #1F1F1F;
+border-radius: 81px;
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+color: #FFFFFF;
+border: 1px solid $secondary;
+@include  center;
+&:active{
+
+  background-color: #fff;
+  color: $secondary;
+}
+}
+.second-con__title{
+  width: 87px;
+height: 24px;
+font-family: 'Acherus Feral';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 120%;
+color: #000000;
+margin-bottom: 10px;
+
+}
+.second-con__subtitle{
+  display: block;
+  width: 191px;
+height: 22px;
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: #000000;
+margin-bottom: 50px;
+}
+
+
+.block12__icon-con{
+  display: flex;
+  
+  gap: 35px;
+}
+.icon-con__content svg{
+  cursor: pointer;
+width: 30px;
+height: 30px;
+transition: .7s;
+&:hover{
+  transform: scale(1.2);
+  
+}
+}
+// footer
+.footer-con{
+  border-top: 1px solid #D5DCE3;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  margin-bottom: 40px;
+}
+.footer__nav-con{
+  width: 250px;
+  height: 85px;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.nav{
+  width: 104px;
+height: 20px;
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 20px;
+text-align: left;
+color: #1F1F1F;
+padding: 0px;
+}
+.footer__content{
+  width: 160px;
+height: 40px;
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 20px;
+text-align: right;
+color: #1F1F1F;
+margin-top: 70px;
+opacity: 0.8;
+}
