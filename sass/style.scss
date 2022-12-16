@@ -7,7 +7,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #f0f8ff;
-  // background-color: #1F1F1F;
 }
 .big-con {
   background-image: url("../img/bg-image.jpg");
@@ -56,7 +55,6 @@ header {
 
 // header-block2
 .header__nav {
-  //   width: 50%;
   display: flex;
   gap: 60px;
 }
@@ -132,6 +130,7 @@ header {
   flex-direction: column;
   gap: 40px;
   padding: 0 0 100px 150px;
+  transition: .4s;
   // padding-bottom: 100px;
 }
 .main-block1 h1 {
@@ -447,34 +446,48 @@ header {
 
 // main-block5
 .main-block5 {
+  background-color: #fff;
   text-align: left;
   position: relative;
-  margin: 100px 0;
-  // justify-content: s;
-  // align-items: center;
+padding-top: 100px;
+padding-bottom: 100px;
+@include center;
 }
-.main-block5 li {
-  width: 841px;
-  height: auto;
-  padding-left: 70px;
-  font-family: "Acherus Feral";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 75px;
-  line-height: 120%;
-  margin-left: 250px;
-  color: #000000;
-}
+// .main-block5 p {
+//   height: 540px;
+//   width: 841px;
+
+//   padding-left: 70px;
+//   font-family: "Acherus Feral";
+//   font-style: normal;
+//   font-weight: 700;
+ 
+//   line-height: 120%;
+
+//   color: #000000;
+// }
 .block5__bg-image img {
   width: 100%;
 }
-.gray-text {
+.gray-text__bg{
+  height: auto;
+     width: 841px;
   background: linear-gradient(140deg, #1f1f1f 50%, #9c9c9c 50%);
-  // -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  
 }
+.gray-text {
+margin: 0;
+background-color: #fff;
+  font-size: 75px;
+  mix-blend-mode: screen;
+  font-family: "Acherus Feral";
+  font-style: normal;
+  font-weight: 700;
+ position: relative;
+  line-height: 120%;
+z-index: 20;
+  color: #000000;
+}
+
 // main-block6
 .general__block6 {
   margin-top: 100px;
@@ -1213,18 +1226,22 @@ transition: .7s;
 }
 }
 // footer
-.footer-con{
+.footer-bg{
+  width: 100%;
+  
   border-top: 1px solid #D5DCE3;
-  height: auto;
+}
+.footer-con{
+  height: 120px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   padding: 0 30px;
   margin-bottom: 40px;
 }
 .footer__nav-con{
   width: 250px;
   height: 85px;
-  margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
@@ -1251,6 +1268,5 @@ font-size: 15px;
 line-height: 20px;
 text-align: right;
 color: #1F1F1F;
-margin-top: 70px;
 opacity: 0.8;
 }
