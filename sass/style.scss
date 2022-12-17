@@ -10,7 +10,7 @@ body {
 }
 .big-con {
   background-image: url("../img/bg-image.jpg");
-  // background-attachment: fixed;
+  background-attachment: fixed;
   @include bg-setting;
   height: auto;
 }
@@ -801,7 +801,7 @@ color: #fff;
 }
 .fon__text {
   width: 227px;
-  height: 44px;
+  height: auto;
 
   font-family: "Nunito Sans";
   font-style: normal;
@@ -1141,8 +1141,8 @@ color: #FFFFFF;
 }
 .block11__icon{
   width: 140px;
-
 }
+
 // main-block12
 .main-block12{
   height: 500px;

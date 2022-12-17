@@ -109,11 +109,22 @@
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   #menu-toggle:checked ~ .menu a {
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
     height: 2.5em;
     padding: 5px 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu #menu-nav1 {
+    border-top: 1px solid #fff;
+  }
+  #menu-toggle:checked ~ .menu #menu-nav2 {
+    border-top: 1px solid #fff;
+  }
+  #menu-toggle:checked ~ .menu #menu-nav3 {
+    border-top: 1px solid #fff;
+  }
+  #menu-toggle:checked ~ .menu #menu-nav4 {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
   }
   .menu > a {
     display: flex;
@@ -138,6 +149,7 @@ body {
 
 .big-con {
   background-image: url("../img/bg-image.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center, center;
@@ -1007,7 +1019,7 @@ header {
 
 .fon__text {
   width: 227px;
-  height: 44px;
+  height: auto;
   font-family: "Nunito Sans";
   font-style: normal;
   font-weight: 400;
