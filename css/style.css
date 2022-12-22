@@ -644,9 +644,22 @@ header {
   height: auto;
   width: 841px;
   background: linear-gradient(140deg, #1f1f1f 50%, #9c9c9c 50%);
+  position: relative;
+}
+
+.gray-text__circle {
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  border-radius: 50%;
+  position: absolute;
+  left: -50px;
+  top: 30px;
+  z-index: 30;
 }
 
 .gray-text {
+  padding-left: 20px;
   margin: 0;
   background-color: #fff;
   font-size: 75px;
@@ -1486,12 +1499,16 @@ a {
   height: 20px;
   font-family: "Nunito Sans";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
   line-height: 20px;
   text-align: left;
   color: #1F1F1F;
   padding: 0px;
+  opacity: 0.8;
+}
+.nav:hover {
+  opacity: 1;
 }
 
 .footer__content {
